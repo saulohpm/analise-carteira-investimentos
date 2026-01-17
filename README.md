@@ -44,3 +44,26 @@ analise-carteira/
 │── dados.py
 │── README.md
 │── requirements.txt
+```
+---
+
+## 🚀 Como Executar
+
+1. Instale as dependências:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Execute o script principal:
+
+```bash
+python main.py
+```
+
+3. Escolha um perfil de investidor e visualize a alocação:
+- Perfis:
+  - 0 = Conservador
+  - 1 = Mediano
+  - 2 = Arrojado
+  - 3 = Personalizado
