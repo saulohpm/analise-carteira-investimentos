@@ -64,5 +64,5 @@ python main.py
 
 3. Ou acesse pelo arquivo:
 ```bash
-analises.ipynb
+notebooks/analises.ipynb
 ```
