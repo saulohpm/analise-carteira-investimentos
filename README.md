@@ -1,41 +1,50 @@
-# Análise e Alocação de Carteira de Investimentos
+# 📊 Análise e Alocação de Carteira de Investimentos
 
-## 📌 Descrição
-Este projeto foi desenvolvido com foco em **lógica de programação em Python**, **organização modular** e **visualização gráfica**, utilizando como estudo de caso a análise de alocação de uma carteira de investimentos baseada em perfis de risco.
+> Ferramenta em Python para avaliar a adequação de uma carteira de investimentos a diferentes perfis de risco e cenários macroeconômicos, com foco em lógica de programação, modularização e visualização de dados.
 
-O projeto não realiza simulações de retorno financeiro, mas avalia a adequação da carteira a diferentes cenários macroeconômicos.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
+---
+
+## 📌 Sobre o Projeto
+
+Este projeto simula a **alocação de patrimônio por classe de ativo** conforme o perfil do investidor (conservador, moderado, arrojado) e avalia como essa carteira se comportaria em diferentes cenários macroeconômicos (juros altos, inflação, crescimento etc.).
+
+> ⚠️ O projeto **não realiza simulações de retorno financeiro real** — o foco é a lógica de alocação e avaliação de adequação, não previsão de rentabilidade.
+
+Desenvolvido como exercício prático de **estruturação de código em Python**, aplicando conceitos de modularização, validação de dados e visualização com `matplotlib`.
+
+---
 
 ## 📊 Funcionalidades
-- Definição de perfis de investidor
-- Alocação percentual por classe de ativo
-- Cálculo da distribuição do patrimônio
-- Avaliação da carteira em cenários distintos
-- Geração de gráfico de pizza da carteira
 
+- ✅ Definição de perfis de investidor (conservador, moderado, arrojado)
+- ✅ Alocação percentual por classe de ativo (renda fixa, renda variável, etc.)
+- ✅ Cálculo da distribuição de patrimônio por classe
+- ✅ Avaliação da carteira frente a diferentes cenários macroeconômicos
+- ✅ Geração de gráfico de pizza da composição da carteira
 
-## 🎯 Objetivos do Projeto
-- Exercitar estruturas de dados em Python
-- Trabalhar com validações lógicas
-- Aplicar modularização em múltiplos arquivos
-- Simular tomada de decisão baseada em perfis
-- Criar visualizações gráficas com `matplotlib`
+---
 
+## 🖼️ Exemplo de Saída
 
-## 🧠 Conceitos de Programação Utilizados
-- Funções e modularização
-- Estruturas de repetição
-- Validação de entradas
-- Manipulação de listas
-- Separação entre dados e lógica
+![Gráfico dos investimentos](assets/exemplo_alocacaodecarteira1.png)
 
+---
 
 ## 📁 Estrutura do Projeto
+
 ```bash
 analise-carteira-investimentos/
 │── main.py
 │── README.md
 │── requirements.txt
+│── LICENSE
+│
+├── assets/
+│   └── exemplo_alocacaodecarteira1.png
 │
 ├── src/
 │   │── __init__.py
@@ -44,25 +53,34 @@ analise-carteira-investimentos/
 │
 └── notebooks/
     └── analises.ipynb
-
 ```
 
+---
 
 ## 🚀 Como Executar
 
-1. Instale as dependências:
+1. Clone o repositório e instale as dependências:
 
 ```bash
+git clone https://github.com/seu-usuario/analise-carteira-investimentos.git
+cd analise-carteira-investimentos
 pip install -r requirements.txt
 ```
 
-2. Edite os valores e depois execute o script principal:
+2. Edite os valores em `src/dados.py` e execute o script principal:
 
 ```bash
 python main.py
 ```
 
-3. Ou acesse pelo arquivo:
+3. Ou explore de forma interativa pelo notebook:
+
 ```bash
-notebooks/analises.ipynb
+jupyter notebook notebooks/analises.ipynb
 ```
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
