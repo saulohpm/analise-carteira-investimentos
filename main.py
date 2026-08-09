@@ -1,4 +1,4 @@
-from src.carteira import alocar, calcularmedia, calcularalocacao, analisar, analise, plotarcarteira
+from src import analisar, calcular, carteira, grafico
 
 def main():
 
@@ -11,14 +11,14 @@ def main():
     # ===============================
     # ANÁLISE DA CARTEIRA
     # ===============================
-    alocacao = alocar(perfil)
-    nota_carteira = calcularmedia(alocacao)
-    analizados = analisar(nota_carteira)
+    alocacao = carteira.alocar(perfil)
+    nota_carteira = calcular.media(alocacao)
+    analizados = analisar.nota(nota_carteira)
 
-    analise(perfil, nota_carteira, analizados)
+    analisar.sensibilidade(perfil, nota_carteira, analizados)
 
-    valores, categorias_filtradas = calcularalocacao(investimento, alocacao)
-    plotarcarteira(valores, categorias_filtradas, perfil, nota_carteira, analizados)
+    valores, categorias_filtradas = calcular.alocacao(investimento, alocacao)
+    grafico.plotar_carteira(valores, categorias_filtradas, perfil, nota_carteira, analizados)
 
 
 if __name__ == "__main__":

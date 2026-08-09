@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from . import dados
 
-def plotarcarteira(valores, categorias_filtradas, perfil, medias, analizados, tamanho = (16, 8)):
+def plotar_carteira(valores, categorias_filtradas, perfil, medias, analizados, tamanho = (16, 8)):
     """
     Gera um gráfico de pizza representando a composição da carteira.
 
