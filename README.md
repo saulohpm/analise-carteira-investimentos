@@ -3,8 +3,8 @@
 > Ferramenta em Python para avaliar a adequação de uma carteira de investimentos a diferentes perfis de risco e cenários macroeconômicos, com foco em lógica de programação, modularização e visualização de dados.
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Versão](https://img.shields.io/badge/Versão-2.1-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Versão](https://img.shields.io/badge/Versão-2.2-yellow)
 
 ---
 
@@ -32,7 +32,11 @@ Desenvolvido como exercício prático de **estruturação de código em Python**
 
 ![Gráfico dos investimentos](assets/exemplo_alocacaodecarteira1.png)
 
+📓 Veja a análise completa, com todos os cenários comparados, em [`notebooks/analises.ipynb`](notebooks/analises.ipynb).
+
 ---
+
+
 
 ## 📁 Estrutura do Projeto
 
