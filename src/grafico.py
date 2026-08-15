@@ -31,15 +31,15 @@ def plotar_carteira(valores, categorias_filtradas, perfil, medias, analizados, t
 
     plt.pie(
         valores,
-        labels=[f"R$ {v:,.0f}" for v in valores],
-        startangle=90,
-        autopct='%1.1f%%'
+        labels = [f"R$ {v:,.0f}" for v in valores],
+        startangle = 90,
+        autopct = '%1.1f%%'
     )
 
     plt.text(
         -3.25, 1,
         f"Perfil: {dados.perfis[perfil]}\n\n"
-        f"Notas nos cenários:\n\n"
+        f"Notas nos cenários (maxima 5):\n\n"
         f"Estável -> {medias[0]}\n"
         f"Base -> {medias[1]}\n"
         f"Pessimista -> {medias[2]}\n\n"
@@ -47,7 +47,7 @@ def plotar_carteira(valores, categorias_filtradas, perfil, medias, analizados, t
         f"{analizados[0]}\n"
         f"{analizados[1]}\n"
         f"{analizados[2]}",
-        fontsize=10,
+        fontsize = 10,
         va='top',
         bbox=dict(boxstyle="round", facecolor="white", alpha=0.25)
     )

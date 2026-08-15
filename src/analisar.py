@@ -23,7 +23,7 @@ def nota(medias):
         elif medias[k] < 4:
             analizado = f"Carteira Resiliente no {dados.cenarios[k]}"
         else:
-            analizado = f"Carteira muito adequada para o {dados.cenarios[k]}"
+            analizado = f"Carteira Muito Adequada para o {dados.cenarios[k]}"
 
         analizados.append(analizado)
 

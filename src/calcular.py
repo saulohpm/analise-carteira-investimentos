@@ -22,7 +22,7 @@ def media(taxas):
         calculo = 0
         for i in range(len(taxas)):
             calculo += taxas[i] * dados.notas[j][i]
-        media = round(calculo / sum(taxas), 2)
+        media = round(calculo / sum(taxas), 1)
         medias.append(media)
 
     return medias
